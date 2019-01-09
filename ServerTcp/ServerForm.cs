@@ -36,7 +36,7 @@ namespace ServerTcp
             try
             {
                 Int32 port = 5000;
-                IPAddress localAddr = IPAddress.Parse("172.17.20.73");
+                IPAddress localAddr = IPAddress.Parse("127.0.0.1");
                 Listener = new TcpListener(localAddr, port);
                 Listener.Start();
                 Byte[] bytes = new Byte[1024];
